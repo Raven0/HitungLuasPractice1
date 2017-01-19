@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical"
-        android:background="@color/colorPrimaryDark">
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp">
 
         <TextView
             android:text="Panjang"
@@ -44,7 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical"
-        android:background="@color/colorAccent">
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
 
         <TextView
             android:text="Lebar"
@@ -73,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:orientation="vertical"
-        android:background="@color/lightPrimary">
+        android:padding="10dp">
 
         <TextView
             android:text="Lebar"
