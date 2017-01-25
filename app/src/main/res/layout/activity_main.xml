@@ -60,6 +60,7 @@
         <EditText
             android:layout_marginTop="30dp"
             android:textAlignment="center"
+            android:textColor="@color/textOrIcon"
             android:id="@+id/edt_lebar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

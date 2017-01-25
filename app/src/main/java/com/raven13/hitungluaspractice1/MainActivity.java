@@ -2,6 +2,7 @@ package com.raven13.hitungluaspractice1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,18 +31,18 @@ public class MainActivity extends AppCompatActivity {
         count.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(edtPanjang.getText().toString().equals("") || edtLebar.getText().toString().equals("")) {
+
+                String panjang = edtPanjang.getText().toString().trim();
+                String lebar = edtLebar.getText().toString().trim();
+
+                if(TextUtils.isEmpty(edtPanjang.getText()) || TextUtils.isEmpty(edtLebar.getText())) {
                     Toast.makeText(MainActivity.this, "Input Kosong..Tolong masukan input", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    String panjang = edtPanjang.getText().toString().trim();
-                    String lebar = edtPanjang.getText().toString().trim();
-
                     double p = Double.parseDouble(panjang);
                     double l = Double.parseDouble(lebar);
 
                     double luas = p * l;
-                    Toast.makeText(MainActivity.this, "Luasnya adalah " + luas , Toast.LENGTH_SHORT).show();
                     result.setText("" + luas);
                 }
             }
